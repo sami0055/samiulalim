@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience &mdash; Md. Samiul Alim</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">Samiul Alim</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="services.html">Services &amp; Outreach</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1>Experience</h1>
+            <p class="page-subtitle">Research, teaching, and selected projects from my undergraduate and post-graduation years.</p>
+        </div>
+
+        <!-- Research Experience -->
+        <section class="experience-section">
+            <h2 class="section-heading">Research Experience</h2>
+
+            <div class="experience-item">
+                <h3>Research Assistant</h3>
+                <div class="company">Machine Intelligence Lab, North South University</div>
+                <div class="duration">January 2026 &ndash; Present &nbsp;&middot;&nbsp; Dhaka, Bangladesh</div>
+                <ul class="exp-list">
+                    <li>Lead author on <strong>CLIPByte</strong>, a tokenizer-free vision&ndash;language model for multilingual open-vocabulary image captioning across six typologically diverse languages (English, Thai, Japanese, Italian, German, Vietnamese).</li>
+                    <li>Designed cross-modal alignment between a CLIP ViT-B/32 visual encoder and a ByT5-small byte-level decoder, removing tokenizer-induced OOV bottlenecks for low-resource scripts.</li>
+                    <li>Built the multilingual evaluation pipeline (CIDEr, METEOR, ROUGE-L, BLEU) including a Unicode-safe fix to <code>pycocoevalcap</code>'s PTBTokenizer for non-ASCII captions, with NaN-safe averaging and persistent JSON logging.</li>
+                    <li>Investigating tokenizer-free pretraining objectives, byte-level sequence-length efficiency, and contrastive temperature behavior at character granularity.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Undergraduate Research Assistant</h3>
+                <div class="company">Supervisor: Dr.&nbsp;Mohammad Abu Yousuf &middot; North South University</div>
+                <div class="duration">January 2024 &ndash; 2025 &nbsp;&middot;&nbsp; Dhaka, Bangladesh</div>
+                <ul class="exp-list">
+                    <li>Led work on <strong>multi-teacher knowledge distillation for brain-tumor classification</strong> (published, <em>Knowledge-Based Systems</em>, Q1, IF&nbsp;7.6), targeting resource-constrained deployment with explainable-AI overlays.</li>
+                    <li>Co-led the <strong>Bangladesh 2024 Mass Uprising sentiment</strong> study (ICCIT 2025), curating a large-scale multi-platform corpus and benchmarking classical and transformer-based NLP models on context-shifted political discourse.</li>
+                    <li>Contributed to early-stage exploration of <strong>image reconstruction from human brain activity</strong> via cross-modal generative models (NeuroCinema-style hierarchical encoders coupled with conditional diffusion).</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Selected Research Projects -->
+        <section class="experience-section">
+            <h2 class="section-heading">Selected Research Projects</h2>
+
+            <div class="experience-item">
+                <h3>NSU Chat Assistant &mdash; Retrieval-Augmented Question Answering</h3>
+                <div class="company">RAG &middot; LLaMA-3-8B &middot; Nomic Embed Text</div>
+                <div class="duration">2024</div>
+                <p>Built a domain-grounded RAG chatbot for university administrative queries; LLaMA-3-8B generator with Nomic-Embed-Text retrieval over a curated NSU document index.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Transformer-Based E-Commerce Sentiment Analysis</h3>
+                <div class="company">BERT fine-tuning</div>
+                <div class="duration">2024</div>
+                <p>Fine-tuned BERT for three-way sentiment classification on e-commerce reviews; analyzed error modes against classical baselines (SVM, Random Forest, AdaBoost, Gradient Boosting, KNN, Decision Tree).</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>ML-Based Hybrid Power Production Forecasting</h3>
+                <div class="company">Predictive modeling for renewable-energy systems</div>
+                <div class="duration">2024</div>
+                <p>Developed a predictive model for hybrid solar/wind/conventional power generation; benchmarked tree- and ensemble-based regressors for short-horizon forecasting.</p>
+            </div>
+        </section>
+
+        <!-- Teaching Experience -->
+        <section class="experience-section">
+            <h2 class="section-heading">Teaching Experience</h2>
+
+            <div class="experience-item">
+                <h3>Undergraduate Teaching Assistant</h3>
+                <div class="company">Department of Mathematics and Physics, North South University</div>
+                <div class="duration">January 2024 &ndash; Present &nbsp;&middot;&nbsp; Dhaka, Bangladesh</div>
+                <ul class="exp-list">
+                    <li>TA for <strong>MAT250</strong> (Advanced Calculus), <strong>MAT350</strong> (Engineering Mathematics), <strong>MAT480</strong> (Partial Differential Equations), and <strong>MAT481</strong> (Numerical Methods).</li>
+                    <li>Conducted 20&nbsp;hrs/week of office hours; mentored students on conceptual derivations, problem sets, and exam preparation.</li>
+                    <li>Co-developed course materials with faculty; evaluated student work and proctored 250+ exams across semesters.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Programming Instructor</h3>
+                <div class="company">Dataque Academy</div>
+                <div class="duration">May 2022 &ndash; August 2023 &nbsp;&middot;&nbsp; Dhaka, Bangladesh</div>
+                <ul class="exp-list">
+                    <li>Taught Java and C++ from beginner through advanced levels with emphasis on algorithmic problem-solving and DS&amp;A fundamentals.</li>
+                    <li>Designed lesson plans, hands-on coding labs, and assessment rubrics; provided individualized feedback.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="experience-section">
+            <h2 class="section-heading">Education</h2>
+
+            <div class="experience-item">
+                <h3>B.Sc.&nbsp;in Computer Science and Engineering</h3>
+                <div class="company">North South University &mdash; Major: Artificial Intelligence &middot; Minor: Mathematics</div>
+                <div class="duration">July 2021 &ndash; 2025 &nbsp;&middot;&nbsp; Dhaka, Bangladesh</div>
+                <ul class="exp-list">
+                    <li><strong>CGPA:</strong> 3.51 / 4.00 &nbsp; (<strong>Mark Percentage:</strong> 89%)</li>
+                    <li><strong>Undergraduate Thesis:</strong> <em>Decoding Language-Agnostic Image Embeddings.</em></li>
+                    <li><strong>Selected Coursework:</strong> Machine Learning, Pattern Recognition, Linear Algebra, Probability &amp; Statistics, Numerical Methods, Partial Differential Equations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="experience-section">
+            <h2 class="section-heading">Technical Skills</h2>
+            <div class="experience-item skills-card">
+                <div class="skill-row">
+                    <span class="skill-label">Programming</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">C</span>
+                        <span class="skill-pill">C++</span>
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">SQL (MySQL)</span>
+                        <span class="skill-pill">HTML</span>
+                        <span class="skill-pill">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">ML / Research Stack</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">PyTorch</span>
+                        <span class="skill-pill">HuggingFace Transformers</span>
+                        <span class="skill-pill">HuggingFace Datasets</span>
+                        <span class="skill-pill">timm</span>
+                        <span class="skill-pill">NumPy</span>
+                        <span class="skill-pill">Pandas</span>
+                        <span class="skill-pill">Matplotlib</span>
+                        <span class="skill-pill">scikit-learn</span>
+                        <span class="skill-pill">TensorFlow</span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Methods</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Vision&ndash;Language Models (CLIP, BLIP-2, LLaVA, ByT5)</span>
+                        <span class="skill-pill">Contrastive pretraining</span>
+                        <span class="skill-pill">Knowledge distillation</span>
+                        <span class="skill-pill">Model pruning</span>
+                        <span class="skill-pill">Transformer fine-tuning</span>
+                        <span class="skill-pill">RAG</span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Tooling</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">Linux</span>
+                        <span class="skill-pill">LaTeX</span>
+                        <span class="skill-pill">Weights &amp; Biases</span>
+                        <span class="skill-pill">MERN stack</span>
+                    </div>
+                </div>
+                <div class="skill-row">
+                    <span class="skill-label">Languages</span>
+                    <div class="skill-pills">
+                        <span class="skill-pill">English (academic &amp; professional)</span>
+                        <span class="skill-pill">Bangla (native)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Md. Samiul Alim. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
