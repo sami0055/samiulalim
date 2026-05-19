@@ -158,6 +158,54 @@ a:hover {
     border-bottom: none;
 }
 
+/* Visitor Map Section */
+.visitor-section {
+    margin-top: 3rem;
+}
+
+.visitor-section h2 {
+    font-size: 2rem;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.visitor-subtitle {
+    color: #4b5563;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.visitor-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.visitor-map-inner {
+    width: 320px;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.visitor-map-inner > * {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.visitor-map-inner iframe,
+.visitor-map-inner canvas,
+.visitor-map-inner img,
+.visitor-map-inner svg {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
 .news-icon {
     position: absolute;
     left: 0;
