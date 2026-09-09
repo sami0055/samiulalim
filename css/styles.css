@@ -133,6 +133,21 @@ code {
     padding: 0 20px;
 }
 
+/* Wider, percentage-based column on larger screens (as in the reference layout). */
+@media (min-width: 800px) and (max-width: 1199px) {
+    .container {
+        max-width: 78%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 60%;
+        margin-left: 18.5%;
+        margin-right: auto;
+    }
+}
+
 /* Header / navigation ---------------------------------------------------- */
 .navbar {
     display: flex;
@@ -216,12 +231,22 @@ code {
 }
 
 .directions {
+    list-style: none;
+    counter-reset: dir;
     margin: 0.2rem 0 0.4rem 0;
-    padding-left: 1.6rem;
+    padding-left: 2.1rem;
 }
 
 .directions li {
+    position: relative;
     margin: 0.25rem 0;
+    counter-increment: dir;
+}
+
+.directions li::before {
+    content: "[" counter(dir) "]";
+    position: absolute;
+    left: -2.1rem;
 }
 
 .contact-line {
@@ -505,7 +530,9 @@ code {
     top: 50%;
     right: 24px;
     transform: translateY(-50%);
-    width: 190px;
+    width: 15%;
+    min-width: 170px;
+    max-width: 250px;
     background: var(--panel);
     padding: 10px 12px 6px 14px;
     border: 1px solid #dddddd;
@@ -537,7 +564,7 @@ code {
     color: var(--accent);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
     #page-contents {
         display: block;
     }
