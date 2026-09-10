@@ -216,12 +216,22 @@ code {
 }
 
 .directions {
+    list-style: none;
+    counter-reset: dir;
     margin: 0.2rem 0 0.4rem 0;
-    padding-left: 1.6rem;
+    padding-left: 2.1rem;
 }
 
 .directions li {
+    position: relative;
     margin: 0.25rem 0;
+    counter-increment: dir;
+}
+
+.directions li::before {
+    content: "[" counter(dir) "]";
+    position: absolute;
+    left: -2.1rem;
 }
 
 .contact-line {
@@ -505,7 +515,9 @@ code {
     top: 50%;
     right: 24px;
     transform: translateY(-50%);
-    width: 190px;
+    width: 15%;
+    min-width: 170px;
+    max-width: 250px;
     background: var(--panel);
     padding: 10px 12px 6px 14px;
     border: 1px solid #dddddd;
